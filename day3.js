@@ -15,21 +15,41 @@
 // }
 // intro();
 
-// function my(){
-//     console
-// }
+
+//scope - block scope....
+function my(){
+    let a =19;
+    console.log(a);
+
+// block declare
+    {
+        let a =90;
+        console.log(a);
+    }
+}
+my();
 
 
 
 // redeclaration possible in var but not in let&const
 // reassignment possible in var & let but not in const
-var a=6;
-a=7;
-let c=9;
-c=5;
+// var a=6;
+// a=7;
+// let c=9;
+// c=5;
 // const d =4;
 // d=2;
 
+// console.log(a);
+// console.log(c);
+// console.log(d);
+
+//hoisting 
 console.log(a);
-console.log(c);
-console.log(d);
+var a =6;
+// output: undefined
+//here only var reaches the top of the function...value of var a doesn't reaches the top ...
+
+console.log(a)
+let a =7;
+// output: error will be displayed
