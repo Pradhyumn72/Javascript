@@ -24,6 +24,5 @@ function mac(){
         alert("back off");
     }
 
-
 }
 mac()
