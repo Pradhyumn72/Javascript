@@ -9,9 +9,9 @@ function mac(){
     //  let confirmn=confirm(5+7);
     //  console.log(confirmn);
     // showing input taken from prompt ..and then showing the message by the help of alert
-    // let a=parseFloat(prompt("enter no.1 "));
-    // let b =parseFloat(prompt("enter no.2 "));
-    // let c =parseFloat(alert(a+b));
+    // let a=Number(prompt("enter no.1 "));
+    // let b =Number(prompt("enter no.2 "));
+    // let c =Number(alert(a+b));
 
 
 
