@@ -46,7 +46,7 @@ function mac(){
 // let a =prompt("enter price of the product");
 // let b =confirm("you have a discount coupon?");
 // if (b){
-//     alert("discount applied");
+//     alert(a-0.1*a);
 // }
 // else{
 //     alert("discount not applicable");
@@ -71,15 +71,58 @@ function mac(){
 // }
 
 // task 6
-let a = confirm("are you sure want to delete ");
-if (a){
-    alert("item deleted")
-}
-else{
-    alert("cancelled")
-}
+// let a = confirm("are you sure want to delete ");
+// if (a){
+//     alert("item deleted")
+// }
+// else{
+//     alert("cancelled")
+// }
 
 //task7 
+
+
+
+
+// task 8 & 9 
+
+// let a =0;
+// while (a<=10){
+//     alert(a);
+//     a++;
+
+// }
+
+
+// task 10
+
+let a =Number(prompt("enter a number"));
+switch(a){
+    case 1:
+    alert("Monday");
+    break
+    case 2 :
+        alert("Tuesday");
+        break
+        case 3 :
+            alert("wednesday");
+            break
+        case 4 :
+            alert("thursday");
+            break
+        case 5 :
+            alert("friday");
+            break
+        case 6 :
+            alert("saturday");
+            break
+        case 7 :
+            alert("sunday");
+            break
+            default:
+                alert("invalid")
+}
+
 }
 
 mac()
