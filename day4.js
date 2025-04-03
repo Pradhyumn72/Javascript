@@ -82,8 +82,6 @@ function mac(){
 //task7 
 
 
-
-
 // task 8 & 9 
 
 // let a =0;
