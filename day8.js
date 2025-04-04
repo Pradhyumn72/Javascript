@@ -1,0 +1,24 @@
+let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
+
+// methods
+// length :no of elements in arrray
+// pop:remove last element
+//push: add new element to end
+// shift:removes first element
+//unshift: add new element to beginning
+// console.log(fruits[2]);// accessing array
+// console.log(fruits.length);
+
+
+// fruits.pop();
+// document.write(fruits);
+
+
+// fruits.push("Guava");
+// console.log(fruits);
+
+// fruits.unshift("Kiwi");
+// console.log(fruits);
+
+// fruits.shift();
+// console.log(fruits);
