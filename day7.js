@@ -20,6 +20,7 @@ let c = (`<h1>Hey Sid</h1>
 let name = "Maddy";
 let age = 19;
 
+
 let intro=`hello everyone i am ${name} and my age is ${age}`;
 document.write(intro);
 
