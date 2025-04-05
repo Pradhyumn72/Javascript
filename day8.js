@@ -1,4 +1,4 @@
-let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
+// let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
 
 // methods
 // length :no of elements in arrray
@@ -8,6 +8,7 @@ let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
 //unshift: add new element to beginning
 // console.log(fruits[2]);// accessing array
 // console.log(fruits.length);
+
 
 
 // fruits.pop();
@@ -22,3 +23,10 @@ let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
 
 // fruits.shift();
 // console.log(fruits);
+
+//splice helps to add elements wherever u want to
+
+let sport=["cricket","football","golf"];
+let equipment=["bat","studs","stick"];
+let venue=["pitch","field","course"];
+console.log(sport.concat(equipment,venue ));
