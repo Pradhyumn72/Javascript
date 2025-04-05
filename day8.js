@@ -6,6 +6,11 @@
 //push: add new element to end
 // shift:removes first element
 //unshift: add new element to beginning
+
+//splice helps to add elements wherever u want to
+
+
+
 // console.log(fruits[2]);// accessing array
 // console.log(fruits.length);
 
@@ -24,7 +29,6 @@
 // fruits.shift();
 // console.log(fruits);
 
-//splice helps to add elements wherever u want to
 
 let sport=["cricket","football","golf"];
 let equipment=["bat","studs","stick"];
