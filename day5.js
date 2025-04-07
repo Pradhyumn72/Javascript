@@ -59,4 +59,16 @@ function venue(){
     else{
         alert("wrong input");
     }
+
+}
+
+function bag(){
+    let o=prompt("what is the sum of 4+3 ");
+if(o==7){
+    alert("correct answer");
+
+}
+else{
+    alert("incorrect answer");
+}
 }

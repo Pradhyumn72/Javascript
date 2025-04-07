@@ -121,6 +121,11 @@ switch(a){
                 alert("invalid")
 }
 
+
+
+
 }
 
 mac()
+
+
