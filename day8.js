@@ -43,3 +43,6 @@
 let arr=[2,5,1,0,4,6,6,2,2,3,3];
 console.log(arr.sort());
 console.log(arr.reverse());
+
+
+// Document object model (DOM):tree like structure of ntml where js can chnage,run,access the content of html   

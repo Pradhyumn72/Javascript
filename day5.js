@@ -72,3 +72,9 @@ else{
     alert("incorrect answer");
 }
 }
+
+function namee(){
+    let r=prompt("enter your name");
+    alert(`your name has ${r.length} letters`);
+
+}
