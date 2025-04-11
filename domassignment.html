@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>task2</title>
+  <style>
+  
+  </style>
+</head>
+<body>
+
+    <!-- <div class="container"> -->
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint excepturi inventore tempore consequuntur, vero fugiat? Sed molestias ratione sunt velit laudantium possimus esse quis. Voluptate eius dignissimos corrupti asperiores natus?</p> -->
+        <div>
+            <!-- <img src="img3.jpg" alt="" class="air"> -->
+        </div>
+      <p id="p2"></p>
+        <!-- <div class="thumbnails"> -->
+           <button onclick="changetext1()" class="b1">increment</button>
+           <button  onclick="changetext2()" class="b2">decrement</button>
+          <button onclick="changetext3()" class="b3">reset</button> 
+        </div>
+      </div>
+      
+
+      <script>
+        let count=0;
+           let a =document.querySelector("#p2");
+           
+        
+      let changetext1 = () => {
+     
+            count++;
+            a.innerHTML=count;
+        }
+        let changetext2=() =>{
+            count--
+            a.innerHTML=count;
+        }
+        let changetext3 = ()=>{
+            count =0;
+            a.innerHTML=count
+        }
+      
+      
+    //   let changetext2 = () => {
+    //     document.querySelector(".air").style.display='block';
+    //   }
+      
+    //   let changetext3 = () => {
+    //     document.querySelector(".air").style.display='flex';
+    //   }
+    </script>  
+  
+
+</body>
+</html>
