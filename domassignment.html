@@ -15,32 +15,19 @@
         <div>
             <!-- <img src="img3.jpg" alt="" class="air"> -->
         </div>
-      <p id="p2"></p>
-        <!-- <div class="thumbnails"> -->
-           <button onclick="changetext1()" class="b1">increment</button>
-           <button  onclick="changetext2()" class="b2">decrement</button>
-          <button onclick="changetext3()" class="b3">reset</button> 
-        </div>
-      </div>
+<!-- taking input value and displaying it with help of JS -->
+    <input type="text" name="name" id="air">
+    <button onclick="book()">show</button>
       
 
       <script>
-        let count=0;
-           let a =document.querySelector("#p2");
-           
-        
-      let changetext1 = () => {
-     
-            count++;
-            a.innerHTML=count;
-        }
-        let changetext2=() =>{
-            count--
-            a.innerHTML=count;
-        }
-        let changetext3 = ()=>{
-            count =0;
-            a.innerHTML=count
+        let book= ()=>{
+
+    
+           let a =document.querySelector("#air").value;
+           if(a){
+            alert(`welcome ${a}`);
+           }
         }
       
       
