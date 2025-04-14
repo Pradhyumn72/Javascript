@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Improved Form</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* form ko screen ke bich mein laaya */
+    background: rgb(43, 9, 88);
+    color: white;
+    height: 100vh;
+  }
+
+
+
+  /* Gradient overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    z-index: -1;
+  }
+
+  /* Form container */
+  .form-container {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    width: 340px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .form-container h2 {
+    text-align: center;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 4px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .form-container input[type="text"] {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+
+  .form-container input[type="text"]::placeholder {
+    color: #eeeeee;
+  }
+
+  .form-container input[type="submit"] {
+    background: linear-gradient(to right, #673e10, #e6ae05);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 15px;
+  }
+
+  .form-container input[type="submit"]:hover {
+    background: linear-gradient(to right, #c4e605, #f2a500);
+  }
+
+  .form-container p {
+    margin: 0;
+    font-size: 13px;
+    color: #ff7070;
+    height: 14px;
+  }
+
+  #statusMsg {
+    text-align: center;
+    margin-top: 15px;
+    color: #90ffb3;
+    font-weight: 600;
+  }
+</style>
+
+</head>
+<body>
+
+ 
+
+  <!-- Form -->
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <p id="errname"></p>
+      <input type="text" id="name" placeholder="Your Name" />
+
+      <p id="errnumber"></p>
+      <input type="text" id="number" placeholder="Your Number" />
+
+      <p id="erremail"></p>
+      <input type="text" id="email" placeholder="Your Email" />
+
+      <p id="errpass"></p>
+      <input type="text" id="password" placeholder="Your Password" />
+
+      <p id="errlogin"></p>
+      <input type="text" id="con-password" placeholder="Confirm Password" />
+
+      <input type="submit" value="Login" onclick="return val()">
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+
+  <!-- JS -->
+  <script>
+    let val = () => {
+      let inpname = document.querySelector("#name").value.trim();
+      let inpnumber = document.querySelector("#number").value.trim();
+      let inpemail = document.querySelector("#email").value.trim();
+      let inppassword = document.querySelector("#password").value.trim();
+      let inpcpass = document.querySelector("#con-password").value.trim();
+
+      let errname = document.querySelector("#errname");
+      let errnumber = document.querySelector("#errnumber");
+      let erremail = document.querySelector("#erremail");
+      let errpass = document.querySelector("#errpass");
+      let errlogin = document.querySelector("#errlogin");
+
+      // Clear previous errors
+      errname.innerHTML = "";
+      errnumber.innerHTML = "";
+      erremail.innerHTML = "";
+      errpass.innerHTML = "";
+      errlogin.innerHTML = "";
+
+      if (inpname === "") {
+        errname.innerHTML = "Please enter your name";
+        return false;
+      } else if (inpnumber === "") {
+        errnumber.innerHTML = "Please enter your number";
+        return false;
+      } else if (isNaN(inpnumber)) {
+        errnumber.innerHTML = "Number must be numeric";
+        return false;
+      } else if (inpnumber.length !== 10) {
+        errnumber.innerHTML = "Please enter a 10-digit number";
+        return false;
+      } else if (!inpemail.includes("@") || !inpemail.includes(".com")) {
+        erremail.innerHTML = "Please enter a valid email";
+        return false;
+      } else if (inppassword === "") {
+        errpass.innerHTML = "Please enter ur pass";
+        return false;
+      } else if (inppassword !== inpcpass) {
+        errlogin.innerHTML = "Pass do not match";
+        return false;
+      }
+
+      document.querySelector("#statusMsg").innerHTML = "Form submitted successfully!";
+      return true;
+    }
+  </script>
+</body>
+</html>
