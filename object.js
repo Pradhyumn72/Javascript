@@ -12,5 +12,9 @@ console.log(obj); //to print full obj
 console.log(obj.Age)// to print any specific key 
 obj.college="VIT"; // to insert an object
 console.log(obj)
-obj.Age=28;
+obj.Age=28; // editing the existing key
 console.log(obj);
+delete obj.City; // for deleting the object
+console.log(obj)
+
+
