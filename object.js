@@ -17,13 +17,43 @@
 // delete obj.City; // for deleting the object
 // console.log(obj)
 
-// destrucutring 
-const student={
-    name:"john",
-    age:20,
-    city:"indore"
+// destrucutring : a way of unpacking values from objects into variables
+// makes code better cleaner and easier to read
+// allows quick access to object properties
+// let student={
+//     name:"john",
+//     age:20,
+//     city:"indore"
+// }
+
+// let {name,age} = student;
+// console.log(name);
+// console.log(age);
+
+// Spread Operator: it is used to spread the elements of an object or array another object or array
+// uses : merge objects or arrays
+// copy exisitng objects/arrays into a new one
+
+// let stu1={
+//     name:"Jack",
+//     age: 30
+// }
+// let stu2={
+//     city:"Bhopal",
+//     grade:"A"
+// }
+
+// // combining objects
+// let comstu={...stu1, ...stu2};
+// console.log(comstu);
+
+let p1=document.querySelector("#para")
+let okk=() =>{
+    if(p1){
+        p1.style.display="none"
+    }
+    else {
+        p1.style.display="block"
 }
 
-const {name,age} = student;
-console.log(name);
-console.log(age);
+}
