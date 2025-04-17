@@ -100,5 +100,4 @@ let pro=[2,6,1,9,72,87]
 // for each: returns new string 
 pro.forEach((e)=>{
     console.log(e%2);
-    
 })

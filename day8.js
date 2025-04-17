@@ -45,4 +45,4 @@ console.log(arr.sort());
 console.log(arr.reverse());
 
 
-// Document object model (DOM):tree like structure of ntml where js can chnage,run,access the content of html   
+// Document object model (DOM):tree like structure of html where js can change,run,access the content of html   
