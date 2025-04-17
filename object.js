@@ -44,16 +44,61 @@
 // }
 
 // // combining objects
-// let comstu={...stu1, ...stu2};
+// let comstu={...stu1, ...stu2};  ... is identification mark
 // console.log(comstu);
 
-let p1=document.querySelector("#para")
-let okk=() =>{
-    if(p1){
-        p1.style.display="none"
-    }
-    else {
-        p1.style.display="block"
-}
+// let p1=document.querySelector("#para")
+// let p2=document.querySelector("#but")
+// let okk=() =>{
+//     if(p1){
+//         p1.style.display="none"
+//         p2.style
+//     }
+//     else {
+//         p1.style.display="block"
+// }
 
-}
+// }
+
+
+// let book={
+//     name: "Air",
+//     age:"NA",
+//     city:"Earth"
+// }
+// // for in loop for object
+
+// for(let pro in book){
+//     console.log(pro) // for taking out only keys
+//     console.log(pro ," ",book[pro])
+// }
+
+// for of used in arrays and strings 
+// let mob=["VIT","Btech","2nd"]
+// for (let col of mob){
+//     console.log(col)
+// }
+
+// let pro=[2,6,1,9,72,87]
+// map :accesses,iterates,performs functions on every element of the array,and then returns array
+// high order function: map is high order function here
+// callback fucntion: passed in a parameter e to }
+// let newpro=pro.map((e)=>{
+//     return e*2
+// })
+// console.log(newpro);
+
+
+// filter
+
+let pro=[2,6,1,9,72,87]
+// let newpro=pro.filter((e)=>{
+//     return e>6;
+// })
+// console.log(newpro)
+
+// for each: returns new string 
+pro.forEach((e)=>{
+    console.log(e%2);
+    
+})
