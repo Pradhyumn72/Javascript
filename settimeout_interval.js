@@ -26,8 +26,8 @@ let air= ()=>{
        
     },2000)
 }
-// clear interval
+// // clear interval
 
-let stopp=()=>{
-    clearInterval(pro)
-}
+// let stopp=()=>{
+//     clearInterval(pro)
+// }
