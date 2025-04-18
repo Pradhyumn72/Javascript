@@ -5,7 +5,7 @@ let Val= () =>{
         errorname.innerHTML="pls enter ur name";
         return false; // this stops refreshing of forms 
     }
-    else if(is===){
+    else if(is===""){
         errorname.innerHTML="pls enter text only"
     }
     
