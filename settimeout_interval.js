@@ -1,19 +1,19 @@
 // settimeout makes asynchronous 
 // syntax:
 // it helps us to delay a code with a specific time duration
- // setTimeout(function,delay); 
-//  setTimeout(()=>{ 
-//     console.log("hello");
-//  },2000)
+ setTimeout(function,delay); 
+ setTimeout(()=>{ 
+    console.log("hello");
+ },2000)
 
-//  console.log("bye")
+ console.log("bye")
 
 
- hi=()=>{
-    setTimeout(()=>
-console.log("hi bunny")
-    ,3000)
- }
+//  hi=()=>{
+//     setTimeout(()=>
+// console.log("hi bunny")
+//     ,3000)
+//  }
 
 // setinterval
 // let a =0;
