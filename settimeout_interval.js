@@ -31,3 +31,19 @@
 // // let stopp=()=>{
 // //     clearInterval(pro)
 // // }
+let count=0;
+let a;
+let air =()=>{
+    
+a= setInterval(() => {
+
+        count++ ;
+        if (count==5){
+            clearInterval(a)
+        }
+        a.innerHTML="a";
+}, 2000);
+    
+
+       
+}
