@@ -1,12 +1,12 @@
-// digital clock
-// let seconds=document.querySelector("#seconds");
-// let milli =document.querySelector("#milli");
-// setInterval(() => {
-//     let Mydate=new  Date()
-// let hours=document.querySelector("#hours");
-//     hours.innerHTML=`${Mydate.getHours()} hours ${Mydate.getSeconds()} seconds ${Mydate.getMilliseconds()} ms`
-// }, 1000);
-console.log(Math.PI);
+digital clock
+let seconds=document.querySelector("#seconds");
+let milli =document.querySelector("#milli");
+setInterval(() => {
+    let Mydate=new  Date()
+let hours=document.querySelector("#hours");
+    hours.innerHTML=`${Mydate.getHours()} hours ${Mydate.getSeconds()} seconds ${Mydate.getMilliseconds()} ms`
+}, 1000);
+// console.log(Math.PI);
 
 
 
