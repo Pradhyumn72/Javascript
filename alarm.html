@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: aqua;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+input[type="time"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid aqua;
+    background-color: #111;
+    color: #0ff;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: aqua;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0ff;
+}
+
+#show {
+    font-size: 13px;
+    margin-top: 20px;
+    color: #0ff;
+}
+
+    </style>
+</head>
+<body>
+    <h1>WakeUp Call: Your Daily Companion</h1>
+    <input type="time" id="usertime">
+ <button onclick="setalarm()" id="button"> Set Alarm</button>
+ <audio src="./wakeupcall.mp3" id="audio"></audio>
+<h1 id="show"></h1>
+
+    <script src="alarm.js"></script>
+</body>
+</html>

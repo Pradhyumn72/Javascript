@@ -1,12 +1,13 @@
 // digital clock
-// let seconds=document.querySelector("#seconds");
-// let milli =document.querySelector("#milli");
-// setInterval(() => {
-//     let Mydate=new  Date()
-// let hours=document.querySelector("#hours");
-//     hours.innerHTML=`${Mydate.getHours()} hours ${Mydate.getSeconds()} seconds ${Mydate.getMilliseconds()} ms`
-// }, 1000);
-console.log(Math.trunc(Math.random()*10000));
+let seconds=document.querySelector("#seconds");
+let milli =document.querySelector("#milli");
+setInterval(() => {
+    let Mydate=new  Date()
+let hours=document.querySelector("#hours");
+    hours.innerHTML=`${Mydate.getHours()} hours ${Mydate.getMinutes()}minutes ${Mydate.getSeconds()} seconds   ${Mydate.getMilliseconds()} ms`
+}, 1000);
+// a =console.log(1000+Math.round(Math.random()*9000));
+
 
 
 
@@ -20,3 +21,5 @@ console.log(Math.trunc(Math.random()*10000));
 // getting day name printed
 // let days=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",]
 // console.log(days[Mydate.getDay()]);
+
+
