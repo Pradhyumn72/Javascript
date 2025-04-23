@@ -20,6 +20,11 @@ let arr1=[{
     name:"Vikas",
     age:25,
     city:"Madrid"
+},
+{
+    name:"Akash",
+    age:35,
+    city:"Munnar"
 }]
 // console.log(arr1[0].city);
 // console.log(arr1[1].name);
