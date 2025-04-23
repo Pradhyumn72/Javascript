@@ -30,9 +30,9 @@ let show=document.querySelector("#datashow")
 arr1.map((e)=>{
     show.innerHTML+=`
    <tr>
-        <td> Name=> ${e.name}</td>
-    <td> Age=> ${e.age}</td>
-    <td> City=> ${e.city}</td>
+    <td>${e.name}</td>
+    <td>${e.age}</td>
+    <td> ${e.city}</td>
     </tr>
     
     `
