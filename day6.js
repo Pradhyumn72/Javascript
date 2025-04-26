@@ -4,7 +4,7 @@ let b =" Hello str 2 <br>";
 // length(): len of string
 // slice(): elements b/w two indexes of str 
 //split(): converts str to array
-// replace();replaces text wiht str
+// replace();replaces text with str
 // concat(): combines text of 2 str
 //substring(): returns elements b/w two strings 
 //toLowerCase():
