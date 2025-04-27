@@ -1,4 +1,4 @@
-// let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
+let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
 
 // // methods
 // // length :no of elements in arrray
@@ -10,12 +10,12 @@
 // //splice helps to add elements wherever u want to
 
 
-// // console.log(fruits[2]);// accessing array
-// // console.log(fruits.length);
+// console.log(fruits[5]);// accessing array
+// console.log(fruits.length);
 
 
-// // fruits.pop();
-// // document.write(fruits);
+// fruits.pop();
+// document.write(fruits);
 
 
 // // fruits.push("Guava");
@@ -32,7 +32,7 @@
 // let equipment=["bat","studs","stick"];
 // let venue=["pitch","field","course"];
 
-// // console.log(sport.concat(equipment,venue ));
+// console.log(sport.concat(equipment,venue ));
 
 
 // console.log(fruits.slice(1,4));
@@ -40,9 +40,8 @@
 // console.log(fruits);
 
 
-let arr=[2,5,1,0,4,6,6,2,2,3,3];
-console.log(arr.sort());
-console.log(arr.reverse());
-
+// let arr=[2,5,1,0,4,6,6,2,2,3,3];
+// console.log(arr.sort());
+// console.log(arr.reverse());
 
 // Document object model (DOM):tree like structure of html where js can change,run,access the content of html   

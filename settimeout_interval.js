@@ -9,23 +9,23 @@
 //  console.log("bye")
 
 
-// //  hi=()=>{
-// //     setTimeout(()=>
-// // console.log("hi bunny")
-// //     ,3000)
-// //  }
+//  hi=()=>{
+//     setTimeout(()=>
+// console.log("hi bunny")
+//     ,3000)
+//  }
 
-// // setinterval
-// // let a =0;
-// // let pro;
-// // let show=document.querySelector("#dis")
-// // let air= ()=>{
-// //   pro=  setInterval(()=>{
-// //        show.innerHTML=a;
-// //        a++  
+// setinterval
+//  a =0;
+// let pro;
+// let show=document.querySelector("#dis")
+//  air= ()=>{
+//   pro=  setInterval(()=>{
+//        show.innerHTML=a;
+//        a++  
        
-// //     },2000)
-// // }
+//     },2000)
+
 // // // clear interval
 
 // // let stopp=()=>{

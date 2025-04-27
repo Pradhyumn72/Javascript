@@ -80,9 +80,9 @@
 // }
 
 // let pro=[2,6,1,9,72,87]
-// map :accesses,iterates,performs functions on every element of the array,and then returns array
-// high order function: map is high order function here
-// callback fucntion: passed in a parameter e to }
+// // map :accesses,iterates,performs functions on every element of the array,and then returns array
+// // high order function: map is high order function here
+// // callback fucntion: passed in a parameter e to }
 // let newpro=pro.map((e)=>{
 //     return e*2
 // })
@@ -91,13 +91,13 @@
 
 // filter
 
-let pro=[2,6,1,9,72,87]
+// let pro=[2,6,1,9,72,87]
 // let newpro=pro.filter((e)=>{
 //     return e>6;
 // })
 // console.log(newpro)
 
-// for each: returns new string 
-pro.forEach((e)=>{
-    console.log(e%2);
-})
+// // for each: returns new string 
+// pro.forEach((e)=>{
+//     console.log(e%2);
+// })
