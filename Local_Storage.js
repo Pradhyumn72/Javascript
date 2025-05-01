@@ -26,4 +26,5 @@ removedata=()=>{
     localStorage.clear()
 
     location.reload() 
+    
 }
