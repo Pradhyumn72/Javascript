@@ -12,13 +12,13 @@ let b =" Hello str 2 <br>";
 //trim; removes leading and traiiling white space and line terminator char
 
 console.log("<br>"+a.length);
+document.write(a.slice[2,7]);
 console.log("<br>"+a[2]+ b[5]);
 document.write("<br>"+a + b); // concatanation
 document.write("<br>"+b.toUpperCase());
 document.write("<br>"+b.toLowerCase());
 // document.write("<br>"+ b.charAt(5));
 // document.write("<br>" + a.charCodeAt(4))//ASCII value
-
 document.write("<br>"+a.slice(0,5)); // slice
 document.write(b.replace("Hello","Helllo")) ;//replace
 document.write(a.replaceAll("is","ok")); //replace all

@@ -1,5 +1,17 @@
 let fruits =["Mango", "Apples",27,"Grapes",72,"Banana"];
 
+(fruits.pop());
+console.log(fruits);
+(fruits.push("kiwi"));
+console.log(fruits);
+console.log(fruits.length);
+// console.log(fruits);
+(fruits.splice(2,0,"muskmelon"));
+console.log(fruits);
+fruits.shift()
+console.log(fruits);
+fruits.unshift("milk")
+console.log(fruits);
 // // methods
 // // length :no of elements in arrray
 // // pop:remove last element

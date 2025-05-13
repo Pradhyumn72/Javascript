@@ -1,6 +1,6 @@
 // // settimeout makes asynchronous 
-// // syntax:
-// // it helps us to delay a code with a specific time duration
+// syntax:
+//it helps us to delay a code with a specific time duration
 //  setTimeout(function,delay); 
 //  setTimeout(()=>{ 
 //     console.log("hello");
@@ -26,9 +26,9 @@
        
 //     },2000)
 
-// // // clear interval
+//  clear interval
 
-// // let stopp=()=>{
+// let stopp=()=>{
 // //     clearInterval(pro)
 // // }
 let count=0;

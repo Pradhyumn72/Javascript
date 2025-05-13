@@ -7,6 +7,12 @@
 //     Age:25,
 //     City:"Bhopal"
 
+let obj={
+    Name:"hello",
+    age:32,
+    city:"Oslo"
+}
+console.log(obj.age);
 // }
 // console.log(obj); //to print full obj
 // console.log(obj.Age)// to print any specific key 
