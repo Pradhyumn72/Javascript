@@ -30,7 +30,7 @@ console.log(arr1[0].city);
 // console.log(arr1[1].name);
 // console.log(arr1[2].age);
 // console.log(arr1[3].city);
-// let show=document.querySelector("#datashow")
+let show=document.querySelector("#datashow")
 
 arr1.map((e)=>{
     show.innerHTML+=`

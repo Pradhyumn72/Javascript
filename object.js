@@ -7,12 +7,14 @@
 //     Age:25,
 //     City:"Bhopal"
 
-let obj={
-    Name:"hello",
-    age:32,
-    city:"Oslo"
-}
-console.log(obj.age);
+// let obj={
+//     Name:"hello",
+//     age:32,
+//     city:"Oslo"
+// }
+// console.log(obj.age);
+// obj.age=23
+// console.log(obj.age);
 // }
 // console.log(obj); //to print full obj
 // console.log(obj.Age)// to print any specific key 
@@ -44,11 +46,12 @@ console.log(obj.age);
 //     name:"Jack",
 //     age: 30
 // }
-// let stu2={
-//     city:"Bhopal",
-//     grade:"A"
+// let pro={
+//     hobby:"football",
+//     way:"leg"
 // }
-
+// let google={...stu1, ...pro}
+// console.log(google);
 // // combining objects
 // let comstu={...stu1, ...stu2};  ... is identification mark
 // console.log(comstu);
@@ -107,3 +110,13 @@ console.log(obj.age);
 // pro.forEach((e)=>{
 //     console.log(e%2);
 // })
+
+let ok=[1,2,3,4,5,6,7]
+let newok= ok.map((e)=>{
+    return e*2
+})
+console.log(newok);
+let dec= ok.filter((e)=>{
+return e>3
+})
+console.log(dec);

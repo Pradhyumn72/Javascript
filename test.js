@@ -27,3 +27,21 @@
 //       },
 //     });
 
+// Q1
+// let a="dog"
+// console.log(a.split(""));
+
+
+// let b='The quick brown fox'
+// let c='aeiouAEIOU'
+// let a=0;
+// for(let e of b){
+//     if (!(e.includes(c))){
+//     console.log('error');
+//     }
+//     else{
+//         a++
+//     }
+// }
+
+// console.log(a);

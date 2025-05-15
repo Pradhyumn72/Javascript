@@ -5,15 +5,16 @@
 
 // document.querySelector("# for id and . for class") // we can pick class as well as id
 
-// function okk(){
-// // let show = document.querySelector("#para")
-// // show.innerHTML="book"
-// // for one line only 
+function okk(){
 // let show = document.querySelector("#para")
-// // for giving css
-// show.innerHTML="boooooooksss"
-// show.style.color="red"
-// }
+show.innerHTML="book"
+// for one line only 
+document.querySelector("#para").textContent=
+
+show.innerHTML="boooooooksss"
+Text.
+show.style.color="red"
+}
 
 
 // // ===============Anonymous Function===============
