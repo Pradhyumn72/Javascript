@@ -45,3 +45,12 @@
 // }
 
 // console.log(a);
+// arr=[1,2,3,4]
+// arr[arr.length] = 5
+// console.log(arr);
+var num=10
+function sum()
+{
+console.log(num+num);
+}
+sum();
