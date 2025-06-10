@@ -111,12 +111,12 @@
 //     console.log(e%2);
 // })
 
-let ok=[1,2,3,4,5,6,7]
-let newok= ok.map((e)=>{
-    return e*2
-})
-console.log(newok);
-let dec= ok.filter((e)=>{
-return e>3
-})
-console.log(dec);
+// let ok=[1,2,3,4,5,6,7]
+// let newok= ok.map((e)=>{
+//     return e*2
+// })
+// console.log(newok);
+// let dec= ok.filter((e)=>{
+// return e>3
+// })
+// console.log(dec);

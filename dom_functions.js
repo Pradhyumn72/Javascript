@@ -55,5 +55,6 @@ let img=()=>{
     o1.style.backgroundImage='url(./img1.jpg)'
 }
 o1.src="image path"; // to change img
+o1.src="image path"; // to change img
 
 
