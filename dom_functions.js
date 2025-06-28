@@ -40,6 +40,7 @@ show.style.color="red"
 // }
 // bunny()
 let o1=document.querySelector(".para")
+let o2=document.querySelector(".ok")
 let orange=()=>{
         o1.style.backgroundColor="orange";
 }
