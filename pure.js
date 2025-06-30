@@ -20,6 +20,7 @@ let oh=()=>{
 }
 let ohh=document.querySelector("#oh")
 ohh.addEventListener('click',oh)
+ohh.addEventListener('onhover',oh)
 // let inp=document.querySelector("#inp")
 // let hell=(e)=>{
 //     console.log(inp.value); // for getting whole value at once
