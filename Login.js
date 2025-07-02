@@ -8,6 +8,6 @@ let login=()=>{
         return false
     }
     else{
-        alert("wrong credentials")
+        alert("Crendtials not matched")
     }
 }
