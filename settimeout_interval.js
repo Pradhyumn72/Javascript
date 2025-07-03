@@ -38,7 +38,7 @@ let air =()=>{
 a= setInterval(() => {
 
         count++ ;
-        if (count==5){
+        if (count==9){
             clearInterval(a)
         }
         a.innerHTML="a";
