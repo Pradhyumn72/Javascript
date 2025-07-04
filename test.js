@@ -53,4 +53,4 @@ function sum()
 {
 console.log(num+num);
 }
-sum();
+
