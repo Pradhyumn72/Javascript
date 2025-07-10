@@ -42,7 +42,7 @@ a= setInterval(() => {
             clearInterval(a)
         }
         a.innerHTML="a";
-}, 2000);
+}, 5000);
     
 
        
