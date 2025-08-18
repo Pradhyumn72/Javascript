@@ -94,33 +94,43 @@ function mac(){
 
 // task 10
 
-let a =Number(prompt("enter a number"));
-switch(a){
-    case 1:
-    alert("Monday");
-    break
-    case 2 :
-        alert("Tuesday");
-        break
-        case 3 :
-            alert("wednesday");
-            break
-        case 4 :
-            alert("thursday");
-            break
-        case 5 :
-            alert("friday");
-            break
-        case 6 :
-            alert("saturday");
-            break
-        case 7 :
-            alert("sunday");
-            break
-            default:
-                alert("invalid")
-}
+// let a =Number(prompt("enter a number"));
+// switch(a){
+//     case 1:
+//     alert("Monday");
+//     break
+//     case 2 :
+//         alert("Tuesday");
+//         break
+//         case 3 :
+//             alert("wednesday");
+//             break
+//         case 4 :
+//             alert("thursday");
+//             break
+//         case 5 :
+//             alert("friday");
+//             break
+//         case 6 :
+//             alert("saturday");
+//             break
+//         case 7 :
+//             alert("sunday");
+//             break
+//             default:
+//                 alert("invalid")
+// }
 
+let n=document.getElementById("n").value
+let a=document.getElementById("a").value
+// let cno=document.getElementById("cno").value
+
+// if (n==""){
+//     alert("name cant be empty")
+// }
+if (a>=18){
+    alert("eligible to drive vehicle")
+}
 
 
 
