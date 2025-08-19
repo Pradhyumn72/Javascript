@@ -128,6 +128,7 @@ let a=document.getElementById("a").value
 // if (n==""){
 //     alert("name cant be empty")
 // }
+
 if (a>=18){
     alert("eligible to drive vehicle")
 }
