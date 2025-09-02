@@ -121,17 +121,19 @@ function mac(){
 //                 alert("invalid")
 // }
 
-let n=document.getElementById("n").value
-let a=document.getElementById("a").value
+// let n=document.getElementById("n").value
+// let a=document.getElementById("a").value
 // let cno=document.getElementById("cno").value
 
 // if (n==""){
 //     alert("name cant be empty")
 // }
 
-if (a>=18){
-    alert("eligible to drive vehicle")
-}
+// if (a>=18){
+//     alert("eligible to drive vehicle")
+// }
+
+
 
 
 
