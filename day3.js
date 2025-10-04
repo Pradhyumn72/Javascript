@@ -61,7 +61,7 @@ const obj1 = {name:"John",age:30}
 const obj2 = Object.assign({}, obj1);
 const obj3={...obj1}
 const obj4={...obj2}
-const obj5={...obj2}
+const obj5={...obj1}
 console.log(obj2);
 console.log(obj3);
 console.log(obj1);
