@@ -6,7 +6,7 @@ setInterval(() =>
     let Mydate=new  Date()
 let hours=document.querySelector("#hours");
     hours.innerHTML=`${Mydate.getHours()} hours ${Mydate.getMinutes()}minutes ${Mydate.getSeconds()} seconds   ${Mydate.getMilliseconds()} ms`
-}, 1600);
+}, 1400);
 // a =console.log(1000+Math.round(Math.random()*9000));
 
 
