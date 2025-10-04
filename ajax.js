@@ -17,7 +17,7 @@ function buttonClickHandler() {
         console.log("On progress...");
     };
 
-    // what to do when response is ready
+    // what to do when response is ready ,onload function must be run
     xhr.onload = function () {
         if (this.status === 200) {
             console.log("Response from ajax.txt:");
@@ -28,9 +28,9 @@ function buttonClickHandler() {
     };
 
     // handle network errors .onerror function
-    // xhr.onerror = function () {
-    //     console.log("Request failed.");
-    // };
+    xhr.onerror = function () {
+        console.log("Request failed.");
+    };
 
     // send the request
     xhr.send();
