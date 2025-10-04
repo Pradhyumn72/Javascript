@@ -21,13 +21,13 @@ function buttonClickHandler() {
     xhr.onload = function () {
         if (this.status === 200) {
             console.log("Response from ajax.txt:");
-            console.log(this.responseText);   // ✅ print content in console
+            console.log(this.responseText);   
         } else {
             console.log("Error: " + this.status);
         }
     };
 
-    // handle network errors
+    // handle network errors .onerror function
     xhr.onerror = function () {
         console.log("Request failed.");
     };
