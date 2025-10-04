@@ -15,7 +15,7 @@ let setalarm=()=>{
         show.innerHTML="Alarm is set"
         
     }
-    },1000)
+    },4000)
  
    
 }
