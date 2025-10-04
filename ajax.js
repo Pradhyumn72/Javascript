@@ -28,9 +28,9 @@ function buttonClickHandler() {
     };
 
     // handle network errors .onerror function
-    xhr.onerror = function () {
-        console.log("Request failed.");
-    };
+    // xhr.onerror = function () {
+    //     console.log("Request failed.");
+    // };
 
     // send the request
     xhr.send();
