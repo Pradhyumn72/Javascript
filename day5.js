@@ -74,7 +74,7 @@ else{
 }
 
 function namee(){
-    let r=prompt("enter your name");
-    alert(`your name has ${r.length} letters`);
+    let inpname=prompt("enter your name");
+    alert(`your name has ${inpname.length} letters`);
 
 }
