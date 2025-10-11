@@ -1,15 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajax</title>
-</head>
-<body>
-    <p>Ajax Tutorial</p>
-    <button id="fetchbtn" onclick="buttonClickHandler()">Fetch Data</button>
-    <button id="backupbtn">Backup Data</button>
+<!-- Simple exam-ready HTML: client-side image map for A–Z (5 cols x 6 rows grid).
+     Use an image named "alphabet-grid.jpg" sized 500x600 (each cell 100x100).
+     Clicking a letter displays an example below. Extend/adjust coords if your image size differs. -->
+     <!doctype html>
+     <html lang="en">
+     <head>
+     <meta charset="utf-8" />
+     <title>Alphabet Image Map (A-Z)</title>
+     <style>
+       body{font-family: Arial, sans-serif; padding:20px;}
+       img{max-width:500px; width:100%; height:auto; display:block; margin-bottom:10px;}
+       #example{padding:10px;border:1px solid #ccc;background:#f9f9f9;min-height:40px;}
+       .letter{font-weight:700}
+     </style>
+     </head>
+     <body>
+     
+     <h3>Click a letter on the image</h3>
+     
+     <!-- Replace the src image with your 500x600 alphabet grid image -->
+     <img src="alphabet-grid.jpg" usemap="#alphaMap" alt="Alphabet grid (A-Z)">
+     
+     <map name="alphaMap">
+       <!-- 5 columns × 6 rows; each cell = 100x100; coords: left,top,right,bottom -->
+       <area shape="rect" coords="0,0,100,100"       href="#" onclick="show('A','A for Apple')" alt="A">
+       <area shape="rect" coords="100,0,200,100"     href="#" onclick="show('B','B for Ball')" alt="B">
+       <area shape="rect" coords="200,0,300,100"     href="#" onclick="show('C','C for Cat')" alt="C">
+       <area shape="rect" coords="300,0,400,100"     href="#" onclick="show('D','D for Dog')" alt="D">
+       <area shape="rect" coords="400,0,500,100"     href="#" onclick="show('E','E for Elephant')" alt="E">
+     
+       <area shape="rect" coords="0,100,100,200"     href="#" onclick="show('F','F for Fish')" alt="F">
+       <area shape="rect" coords="100,100,200,200"   href="#" onclick="show('G','G for Goat')" alt="G">
+       <area shape="rect" coords="200,100,300,200"   href="#" onclick="show('H','H for Hat')" alt="H">
+       <area shape="rect" coords="300,100,400,200"   href="#" onclick="show('I','I for Ice-cream')" alt="I">
+       <area shape="rect" coords="400,100,500,200"   href="#" onclick="show('J','J for Jug')" alt="J">
+     
+       <area shape="rect" coords="0,200,100,300"     href="#" onclick="show('K','K for Kite')" alt="K">
+       <area shape="rect" coords="100,200,200,300"   href="#" onclick="show('L','L for Lion')" alt="L">
+       <area shape="rect" coords="200,200,300,300"   href="#" onclick="show('M','M for Monkey')" alt="M">
+       <area shape="rect" coords="300,200,400,300"   href="#" onclick="show('N','N for Nest')" alt="N">
+       <area shape="rect" coords="400,200,500,300"   href="#" onclick="show('O','O for Orange')" alt="O">
+     
+       <area shape="rect" coords="0,300,100,400"     href="#" onclick="show('P','P for Parrot')" alt="P">
+       <area shape="rect" coords="100,300,200,400"   href="#" onclick="show('Q','Q for Queen')" alt="Q">
+       <area shape="rect" coords="200,300,300,400"   href="#" onclick="show('R','R for Rabbit')" alt="R">
+       <area shape="rect" coords="300,300,400,400"   href="#" onclick="show('S','S for Sun')" alt="S">
+       <area shape="rect" coords="400,300,500,400"   href="#" onclick="show('T','T for Tiger')" alt="T">
+     
+       <area shape="rect" coords="0,400,100,500"     href="#" onclick="show('U','U for Umbrella')" alt="U">
+       <area shape="rect" coords="100,400,200,500"   href="#" onclick="show('V','V for Van')" alt="V">
+       <area shape="rect" coords="200,400,300,500"   href="#" onclick="show('W','W for Whale')" alt="W">
+       <area shape="rect" coords="300,400,400,500"   href="#" onclick="show('X','X for X-ray (or Xylophone)')" alt="X">
+       <area shape="rect" coords="400,400,500,500"   href="#" onclick="show('Y','Y for Yak')" alt="Y">
+     
+       <area shape="rect" coords="0,500,100,600"     href="#" onclick="show('Z','Z for Zebra')" alt="Z">
+     </map>
+     
+     <div id="example">Click any letter to see the example here.</div>
+     
+     <script>
+     function show(letter, text){
+       // prevent default anchor behavior
+       event.preventDefault();
+       document.getElementById('example').innerHTML =
+         '<span class="letter">'+letter+'</span> &nbsp; - &nbsp; '+ text;
+     }
+     </script>
+     
+     </body>
+     </html>
 
-    <script src="ajax.js"></script>
-</body>
-</html>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+     <!doctype html>
+     <html lang="en">
+     <head>
+       <meta charset="utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <title>English Alphabet Chart — Image Map Demo</title>
+       <style>
+         :root{--img-w:780px;--cell:130px}
+         body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:24px;background:#f7fafc;color:#0f172a}
+         .wrap{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:start}
+         .chart{background:white;padding:12px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.08)}
+         .chart h2{margin:0 0 12px;font-size:18px}
+         .image-box{width:var(--img-w);max-width:100%;overflow:hidden}
+         img#alphaImg{display:block;border-radius:8px;border:1px solid #e6eef8}
+         .panel{background:white;padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(15,23,42,0.06)}
+         .example-title{font-size:20px;margin:6px 0}
+         .example-emoji{font-size:64px;line-height:1}
+         .example-word{font-weight:700;font-size:18px;margin-top:6px}
+         .example-desc{color:#334155;margin-top:8px}
+         .hint{font-size:12px;color:#475569;margin-top:8px}
+         .grid-legend{font-size:13px;color:#475569;margin-top:10px}
+         button.btn{display:inline-block;margin-top:12px;padding:8px 12px;border-radius:8px;border:0;background:#0ea5a4;color:white;cursor:pointer}
+         footer{margin-top:18px;font-size:13px;color:#64748b}
+       </style>
+     </head>
+     <body>
+       <div class="wrap">
+         <main class="chart">
+           <h2>English Alphabet Chart (click a letter)</h2>
+           <div class="image-box">
+             <!-- The image will be created dynamically from an inline SVG (data URL) for a crisp vector chart -->
+             <img id="alphaImg" usemap="#alphamap" alt="Alphabet chart grid" width="780" height="650">
+             <map name="alphamap" id="alphamap"></map>
+           </div>
+           <div class="grid-legend">Grid: 6 columns × 5 rows • Each cell is 130×130 pixels</div>
+           <footer>Tip: This demo uses a single image with HTML client-side image mapping (&lt;map&gt; + &lt;area&gt;). Works offline — just open the file in a browser.</footer>
+         </main>
+     
+         <aside class="panel">
+           <div id="example" aria-live="polite">
+             <div class="example-emoji">🔤</div>
+             <div class="example-title">Click any letter on the chart</div>
+             <div class="example-word">Example will display here</div>
+             <div class="example-desc">Each letter shows a friendly example word and an image/emoji. You can replace the emoji with real images if you prefer.</div>
+             <div class="hint">Accessible: Areas include alt text and are keyboard-focusable.</div>
+           </div>
+           <button class="btn" id="resetBtn">Reset</button>
+         </aside>
+       </div>
+     
+     <script>
+     (function(){
+       // Configuration
+       const cols = 6;
+       const cell = 130; // cell width and height in px
+       const rows = 5;
+       const svgW = cols * cell; // 780
+       const svgH = rows * cell; // 650
+     
+       // Examples: letter -> {word, emoji, desc}
+       const examples = {
+         A:{word:'Apple',emoji:'🍎',desc:'A is for Apple — a sweet, common fruit.'},
+         B:{word:'Ball',emoji:'⚽',desc:'B is for Ball — used for many games.'},
+         C:{word:'Cat',emoji:'🐱',desc:'C is for Cat — a common pet.'},
+         D:{word:'Dog',emoji:'🐶',desc:'D is for Dog — loyal and friendly.'},
+         E:{word:'Elephant',emoji:'🐘',desc:'E is for Elephant — the largest land animal.'},
+         F:{word:'Fish',emoji:'🐟',desc:'F is for Fish — lives in water.'},
+         G:{word:'Grapes',emoji:'🍇',desc:'G is for Grapes — small clustered fruits.'},
+         H:{word:'House',emoji:'🏠',desc:'H is for House — a place to live.'},
+         I:{word:'Ice cream',emoji:'🍨',desc:'I is for Ice cream — a cold dessert.'},
+         J:{word:'Jam',emoji:'🍓',desc:'J is for Jam — fruit spread.'},
+         K:{word:'Kite',emoji:'🪁',desc:'K is for Kite — flies in the sky.'},
+         L:{word:'Lion',emoji:'🦁',desc:'L is for Lion — the king of the jungle.'},
+         M:{word:'Monkey',emoji:'🐒',desc:'M is for Monkey — playful and agile.'},
+         N:{word:'Nest',emoji:'🐦',desc:'N is for Nest — where birds raise chicks.'},
+         O:{word:'Orange',emoji:'🍊',desc:'O is for Orange — a citrus fruit.'},
+         P:{word:'Penguin',emoji:'🐧',desc:'P is for Penguin — a flightless bird.'},
+         Q:{word:'Queen',emoji:'👑',desc:'Q is for Queen — a royal figure.'},
+         R:{word:'Rainbow',emoji:'🌈',desc:'R is for Rainbow — colourful arc in the sky.'},
+         S:{word:'Sun',emoji:'☀️',desc:'S is for Sun — the star at the center of our solar system.'},
+         T:{word:'Tree',emoji:'🌳',desc:'T is for Tree — provides shade and oxygen.'},
+         U:{word:'Umbrella',emoji:'☂️',desc:'U is for Umbrella — keeps you dry.'},
+         V:{word:'Violin',emoji:'🎻',desc:'V is for Violin — a string instrument.'},
+         W:{word:'Whale',emoji:'🐋',desc:'W is for Whale — a large sea mammal.'},
+         X:{word:'Xylophone',emoji:'🎶',desc:'X is for Xylophone — a musical instrument.'},
+         Y:{word:'Yacht',emoji:'⛵',desc:'Y is for Yacht — a recreational boat.'},
+         Z:{word:'Zebra',emoji:'🦓',desc:'Z is for Zebra — a striped animal.'}
+       };
+     
+       // Build SVG markup (grid + letters centered)
+       function buildSVG(){
+         let rects = '';
+         let letters = '';
+         const lettersArr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+         for(let i=0;i<lettersArr.length;i++){
+           const col = i % cols;
+           const row = Math.floor(i / cols);
+           const x = col * cell;
+           const y = row * cell;
+           // subtle background cell
+           rects += `<rect x="${x}" y="${y}" width="${cell}" height="${cell}" fill="#f8fafc" stroke="#e6eef8"/>`;
+           // letter (centered)
+           const cx = x + cell/2;
+           const cy = y + cell/2 + 8; // tweak vertical centering
+           letters += `<text x="${cx}" y="${cy}" font-family="Segoe UI, Roboto, Arial" font-size="48" font-weight="700" text-anchor="middle" fill="#0f172a">${lettersArr[i]}</text>`;
+         }
+     
+         const svg = `<?xml version="1.0" encoding="UTF-8"?>
+         <svg xmlns='http://www.w3.org/2000/svg' width='${svgW}' height='${svgH}' viewBox='0 0 ${svgW} ${svgH}'>
+           <defs>
+             <linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='#ffffff'/><stop offset='1' stop-color='#f1f8ff'/></linearGradient>
+           </defs>
+           <rect width='100%' height='100%' fill='url(#g)' rx='8' ry='8'/>
+           ${rects}
+           ${letters}
+         </svg>`;
+         return svg;
+       }
+     
+       // Create image data URL from svg and set to img
+       const img = document.getElementById('alphaImg');
+       const svgText = buildSVG();
+       img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgText);
+       img.width = svgW; img.height = svgH; // keep natural size so coords match
+     
+       // Create map areas
+       const map = document.getElementById('alphamap');
+       const lettersArr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+       let areasHTML = '';
+       for(let i=0;i<lettersArr.length;i++){
+         const col = i % cols; const row = Math.floor(i/cols);
+         const x1 = col * cell; const y1 = row * cell; const x2 = x1 + cell; const y2 = y1 + cell;
+         const coords = [x1,y1,x2,y2].join(',');
+         const letter = lettersArr[i];
+         areasHTML += `<area shape="rect" coords="${coords}" href="#" data-letter="${letter}" alt="${letter}" tabindex="0">`;
+       }
+       map.innerHTML = areasHTML;
+     
+       // Interaction: show example in panel
+       const example = document.getElementById('example');
+       function show(letter){
+         const ex = examples[letter];
+         example.innerHTML = `
+           <div class="example-emoji">${ex.emoji}</div>
+           <div class="example-title">Letter: ${letter}</div>
+           <div class="example-word">${ex.word}</div>
+           <div class="example-desc">${ex.desc}</div>
+           <div class="hint">You clicked: ${letter}. Press Reset to go back.</div>
+         `;
+       }
+     
+       // Make areas respond to click and keyboard (Enter/Space)
+       map.querySelectorAll('area').forEach(area=>{
+         area.addEventListener('click', function(ev){ ev.preventDefault(); show(this.dataset.letter); });
+         area.addEventListener('keydown', function(ev){ if(ev.key==='Enter' || ev.key===' ') { ev.preventDefault(); show(this.dataset.letter); } });
+       });
+     
+       // Reset button
+       document.getElementById('resetBtn').addEventListener('click', function(){
+         example.innerHTML = `
+           <div class="example-emoji">🔤</div>
+           <div class="example-title">Click any letter on the chart</div>
+           <div class="example-word">Example will display here</div>
+           <div class="example-desc">Each letter shows a friendly example word and an image/emoji. You can replace the emoji with real images if you prefer.</div>
+           <div class="hint">Accessible: Areas include alt text and are keyboard-focusable.</div>
+         `;
+       });
+     
+     })();
+     </script>
+     </body>
+     </html>
+     
