@@ -22,6 +22,7 @@ let ohh=document.querySelector("#oh")
 ohh.addEventListener('click',oh)
 hh.addEventListener('click',oh)
 hh.addEventListener('click',oh)
+hh.addEventListener('click',oh)``
 // let inp=document.querySelector("#inp")
 // let hell=(e)=>{
 //     console.log(inp.value); // for getting whole value at once
